@@ -1,0 +1,294 @@
+
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+    }
+    #head {
+        width: 100%;
+        height: 100%;
+        background: transparent linear-gradient(90deg, #A99FAD 0%, #5CBADB 100%);
+        text-align: center;
+        color: #FFFFFF;
+        overflow: hidden;
+    }
+    #head .top {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+        padding-top: 25px;
+        background: transparent linear-gradient(90deg, #999FAF 0%, #52B7D9 100%);
+    }
+    #head .top .logo {font: Bold 20px/20px Segoe Script;letter-spacing: 0;}
+
+    #head .top .support .icon {float: left;margin: 5px 0 20px 0;}
+    #head .top .support .icon img {width: 35px;height: 35px;}
+    #head .top .support p {
+        float: left;
+        font-family: Raleway, sans-serif;
+        font-size: 20px;
+        line-height: 20px;
+        margin: 10px 0 20px 10px;
+    }
+    #head .top .sign {display: grid;grid-template-columns: auto auto;}
+
+    #head .top .sign .signIn {
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        line-height: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+    #head .top .sign button {
+        width: 120px;
+        height: 40px;
+        border: 2px solid #FFFFFF;
+        border-radius: 3px;
+        background-color: transparent;
+        color: #FFFFFF;
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        padding: 5px 20px;
+    }
+    #head .body h3 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 35px;
+        text-transform: uppercase;
+        padding: 80px 0 10px 0;
+    }
+    #head .body p {font-family: 'Raleway', sans-serif;line-height: 20px;}
+
+    #head .body #buttonL {
+        background: #E24741;
+        border: 2px solid #E24741;
+        width: 207px;
+        height: 48px;
+        border-radius: 3px;
+        color: #FFFFFF;
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    #head .foot {
+        margin-top: 160px;
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+    }
+
+    #head .foot .lineL {
+        width: 28em;
+        height: 2px;
+        background-color: #bdd7e4;
+        margin-left: 90px;
+        margin-top: 10px;
+    }
+    #head .foot .social {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+        width: 200px;
+        margin: 0 33px;
+    }
+    #head .foot .social img {
+        float: left;
+        width: 25px;
+        height: 25px;
+    }
+    #head .foot .lineR {
+        width: 28em;
+        height: 2px;
+        background-color: #bdd7e4;
+        margin-right: 90px;
+        margin-top: 10px;
+    }
+    #bookshelf {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 23% 23% 23%;
+        grid-gap: 35px;
+        margin-top: 100px;
+        margin-bottom: 90px;
+        justify-content: center;
+    }
+    .book {
+        height: 340px;
+        text-align: center;
+        padding: 0;
+        box-shadow: 0 3px 6px #00000029;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .book:hover {border: 2px solid #e64348;}
+
+    .book img {width: 100%;height: 75%;}
+
+    .book .title,.author {
+        margin: 8px 0;
+        text-transform: capitalize;
+        font-family:  'Raleway', sans-serif;
+        color: #202020;
+        font-weight: bold;
+    }
+    .book span {float: left;padding-left: 15px;color: #929292;}
+
+    #newBook {margin: auto;display: grid;width: 650px;}
+
+    #newBook #button {
+        width: 200px;
+        height: 57px;
+        color: #FFFFFF;
+        font-family:  'Raleway', sans-serif;
+        background-color: #E24741;
+        box-shadow: 0 3px 6px #00000014;
+        padding: 10px 0 20px 0 ;
+        border: 2px solid #E24741;
+        font-size: 1.1em;
+        border-radius: 4px;
+        margin-bottom: 40px;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+    }
+    #buttonB {
+        width: 43px;
+        height: 43px;
+        color: #FFFFFF;
+        background-color: #E24741;
+        border: 4px solid #FFFFFF;
+        font-size: 1.1em;
+        border-radius: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        top: -60px;
+    }
+    #buttonB img {margin-left: auto;margin-right: auto;}
+
+    #form {
+        display: none;
+        background-color: #EEEEEE;
+        border-radius: 20px;
+        margin-bottom: 40px;
+    }
+    #form h3 {
+        color: #242424;
+        font-family:  'Raleway', sans-serif;
+        font-weight: bold;
+        margin: 25px 25px 10px 25px;
+    }
+    input {
+        width: 90%;
+        height: 50px;
+        border-radius: 10px;
+        margin: 15px 25px;
+        border: none;
+        padding-left: 18px;
+        font-family:  'Raleway', sans-serif;
+    }
+    #add {
+        margin: 10px 25px 30px 25px;
+        width: 115px;
+        height: 45px;
+        border-radius: 3px;
+        background: #E24741;
+        border: 2px solid #E24741;
+        color: #FFFFFF;
+        font-family:  'Raleway', sans-serif;
+        font-size: 20px;
+    }
+    #form #titleError,#authorError,#imgError {
+        color: red;
+        font-family:  'Raleway', sans-serif;
+        margin-left: 25px;
+        display: none;
+    }
+    #cancel {
+        margin: 10px 25px 20px 0;
+        width: 115px;
+        height: 45px;
+        background: transparent;
+        border: none;
+        color: #E24741;
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+    }
+    #footer {
+        width: 100%;
+        height: 300px;
+        color: #FFFFFF;
+        background: transparent linear-gradient(90deg, #A99FAD 0%, #5CBADB 100%);
+        text-align: center;
+        padding-top: 50px;
+        margin-top: 40px;
+    }
+    #footer .logo {font: Bold 20px/20px Segoe Script;letter-spacing: 0;}
+
+    #footer h2 {
+        font-family:  'Raleway', sans-serif;
+        margin-top: 40px;
+        font-size: 30px;
+    }
+    #footer p {
+        font-family:  'Raleway', sans-serif;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    #footer .social {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+        width: 200px;
+        padding-top: 5px;
+        padding-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #footer .social div {
+        width: 40px;
+        height: 40px;
+        background-color: #4696B2;
+        border-radius: 50%;
+    }
+    #footer .social img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7px;
+        width: 25px;
+        height: 25px;
+        border-radius: 2px;
+    }
+
+    @media screen and (max-width: 767px){
+        #bookshelf {
+         width: 100%;
+         grid-template-columns: 43% 43%;
+     }
+    #newBook {width: 90%;}
+    #head .foot .lineL {width: 9.3em;}
+    #head .foot .lineR {width: 9.3em;}
+    }
+    @media screen and (max-width: 500px){
+
+        #head .top .logo {font-size: 16px}
+        #head .top .support .icon img {display: none;}
+        #head .top .support p {font-size: 16px;margin: 10px 0 20px 3px;}
+        #head .top .sign .signIn {font-size: 16px}
+        #head .top .sign button {
+            width: 90px;
+            height: 30px;
+            font-size: 16px;
+            padding: 5px 15px;
+            margin-top: 3px;
+        }
+        #head .foot .lineL {display: none;}
+        #head .foot .lineR {display: none;}
+        #bookshelf {
+            width: 100%;
+            grid-template-columns: 80%;
+        }
+        #newBook {width: 90%;}
+
+    }
