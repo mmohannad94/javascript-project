@@ -1,2 +1,2 @@
 # library-project
-this is my first repository on GitHup
+this is my javascript project.
